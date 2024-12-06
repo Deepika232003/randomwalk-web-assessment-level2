@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking to external CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1> <!-- Heading for the game -->
+  </header>
+  
+  <main>
+    <!-- Scoreboard displaying the current score of both players -->
+    <div class="scorecard">
+      <div>Player X: <span id="scoreX">0</span></div> <!-- Score of Player X -->
+      <div>Player O: <span id="scoreO">0</span></div> <!-- Score of Player O -->
+    </div>
+
+    <!-- Message to indicate whose turn it is -->
+    <div id="message">Player X's Turn</div>
+
+    <!-- Game Grid: 9 cells where players can make their moves -->
+    <div class="grid">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+  </main>
+
+  <!-- Win Modal: Appears when a player wins or the game ends in a draw -->
+  <div id="winModal" class="modal">
+    <div class="modal-content">
+      <p id="modalMessage"></p> <!-- Message showing who won or if it's a draw -->
+      <button id="modalClose">Play Again</button> <!-- Button to close the modal and restart the game -->
+    </div>
+  </div>
+
+  <!-- Linking to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
